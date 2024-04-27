@@ -11,7 +11,8 @@ import pickle
 
 # Load model
 with open('chanathip-knn_penguin.pkl', 'rb') as file:
-    model, species_encoder, island_encoder, sex_encoder = pickle.load(file)
+    # Load the data from the file
+    model, species_encoder, island_encoder ,sex_encoder = pickle.load(file)
 
 # Streamlit app
 st.title("Penguin Species Prediction")
